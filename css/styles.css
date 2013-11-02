@@ -1,0 +1,420 @@
+/*
+CSS Handcrafted by:
+___  ___        _    _      _             
+|  \/  |       | |  | |    (_)            
+| .  . |  __ _ | |_ | |__   _   __ _  ___ 
+| |\/| | / _` || __|| '_ \ | | / _` |/ __|
+| |  | || (_| || |_ | | | || || (_| |\__ \
+\_|  |_/ \__,_| \__||_| |_||_| \__,_||___/
+www.mathiasrechtzigel.com                                                         
+*/
+
+/* Nukes margins and padding. For everything. Scary. */
+* {margin: 0; padding: 0;}
+ul{list-style-type: none;}
+li{list-style-type: none;}
+body{
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+    font-family: 'hagin_caps_mediumregular', sans-serif;}
+
+/* 12-column responsive grid */
+
+@media only screen and (max-width: 750px), only screen and (max-device-width: 750px),only screen and (max-height: 620px), only screen and (max-device-height: 620px){
+.col-5{width:100%!important;}
+.col-4{width:100%!important;}
+.col-6{width:100%!important;}
+}
+
+@media only screen and (max-height: 400px), only screen and (max-device-height: 400px),only screen and (max-width: 350px), only screen and (max-device-width: 350px),{
+.aboutHeader{font-size:2em!important;}
+.aboutParagraph{font-size: 1em!important;}
+.aboutTwoStyles{text-shadow: 1px 1px #2d2d2d!important;}
+}
+
+
+.row {
+    clear: both;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row-third {
+    clear: both;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.row-half {
+    clear: both;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.row-twoThird {
+    clear: both;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+[class^="col-"] {
+    float: left;
+    margin: 0 3.84615384615% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 4.8076923077% }
+.col-2 { width: 13.4615384615% }
+.col-3 { width: 22.1153846154% }
+.col-4 { width: 30.7692307692% }
+.col-5 { width: 39.4230769231% }
+.col-6 { width: 48.0769230769% }
+.col-7 { width: 56.7307692308% }
+.col-8 { width: 65.3846153846% }
+.col-9 { width: 74.0384615385% }
+.col-10 { width: 82.6923076923% }
+.col-11 { width: 91.3461538462% }
+.col-12 { width: 100%; margin: 0 }
+
+/* /End Responsive Grid */
+/* Reusuable Stuff */
+.boxlight{box-shadow: 0px 0px 10px 0px white;}
+.active{display:block!important;height:200px!important;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;}
+.activeOpacity{opacity:.5;}
+.threeBottomPad{padding-bottom: 3em;}
+.hidden{display:none;}
+.textLeft{text-align: left;}
+.textRight{text-align: right;}
+.extraMargin{margin-left:1.5em;
+margin-right: 1.5em;}
+.paddingRight{padding-right: 1.5em;}
+.paddingLeft{padding-left: 1.5em;}
+
+/* Start Custom Styling */
+html{height:100%;}
+body{
+    height: 100%;
+    text-align: center;
+    color: white;
+    /*background: url("../img/tweed.png");*/
+    background: #666;}
+div{display:block;}
+
+.wrapper{
+    position: relative;
+    height: 100%;}
+
+/* Header Styles */
+header{
+    width:100%; 
+    height:75px; 
+    background: url("../img/noisy_net.png");
+} 
+#logo{
+    background: url("../img/logo_small.png")no-repeat;
+    position: relative;
+    top: 10px;
+    width:89px;
+    height:51px;
+    margin-left: 1.5em;
+    display: inline-block;
+    float: left;
+}
+
+#logo:hover{
+    opacity: .5;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+} 
+#headerNav{
+    display:block;
+    position: relative;
+    margin-top: 1.5em;
+}
+
+@media only screen and (min-width : 670px) {
+    #mobileMenuIcon{display:none;}
+    .phone{display:none!important;}
+    nav li{
+        border-right: 1px solid white;
+    }
+}
+@media only screen and (max-width : 670px) {
+    #phoneNumber{display:none!important;}
+    #headerNav{
+        width: 100%;
+        top: 75px;
+        background: url("../img/noisy_net.png");
+        margin-top: 0;
+        box-shadow: 0px 5px 10px -5px white;
+        height: 0px;
+        position: absolute;
+        z-index: 2;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        overflow: hidden;
+    }
+    nav{clear:both;}
+    nav li{
+        display:block!important;
+        padding: .5em!important;
+        border-top: 1px solid #303030;
+        width: 93%;
+        margin: 0 auto;
+    }
+    nav ul{padding-top: 5px!important}
+    .extraBottomPadding{margin-bottom: 4em!important;}
+    .landingTitle{font-size: 3em!important;}
+    .landingSubTitle{font-size: 1.5em!important;}
+    .sectionHeader{font-size: 1.5em!important;}
+}
+
+nav{float: right;}
+nav ul{
+    position: relative;}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 1.3em;
+    font-family: 'chunkfiveroman', sans-serif;
+}
+a{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+a:hover{
+    color:#888;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#mobileMenuIcon{
+    float:right;
+    position:relative;
+    margin-right: 25px;
+    margin-top: .6em;
+    height:50px;
+    width:70px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#mobileMenuIcon:hover{
+    opacity:.5;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.headerCanvas{
+    height: 100%;
+    width:100%;
+    background:url("../img/landing_background_001.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.headerWrapper{
+    height:75px;
+    background-color: white;}
+
+#landingWrapper{
+    position: absolute;
+    top: 30%;
+    text-shadow: 2px 2px #2d2d2d;
+    width: 100%;}
+
+.barBell{
+    margin: auto;
+    position: relative;
+    background: url('../img/logo_large.png') no-repeat;
+    width: 302px;
+    height: 81px;
+}
+
+.landingTitle{font-size: 4em;
+    font-family: 'chunkfiveroman', sans-serif;}
+.landingSubTitle{
+    font-size: 2em;
+    font-family: 'blackjackregular', sans-serif;}
+
+a{  
+    text-decoration: none;
+    color:#ffffff;}
+
+.contentContainer{
+    height:100%;
+}
+
+.descriptionImages{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px #2d2d2d;
+}
+.sectionHeader{
+    font-size: 2em;
+    padding: .5em 0;
+    font-family: 'genevaregular';
+    text-shadow: 2px 2px #2d2d2d;}
+
+span{
+    font-family: 'chunkfiveroman';
+    text-transform: uppercase;
+    text-shadow: 2px 2px #2d2d2d;}
+.sectionParagraph{
+    margin-bottom: 1em;
+    font-family: 'genevaregular';
+    text-align: left}
+p a{
+    text-decoration: underline;}
+p a:hover{
+    color:;}     
+.extraP{padding:1em 0;}
+
+#copyRight{
+    float:left;
+    display:inline-block;
+    margin-left: 1.5em;    
+}
+.location{display:inline-block;}
+.socialIcon{
+    float:right;
+    display:inline-block;
+    height:30px;
+    width:30px;
+    padding:.5em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.socialIconLarge{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.socialIcon:hover{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    opacity:.5;
+}
+.socialIconLarge:hover{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    opacity:.5;
+}
+
+.footer {
+    background: url("../img/noisy_net.png"); 
+    bottom: 0;
+    height: 3em;
+    width: 100%;   
+    box-shadow: 0px 0px 10px 0px white;
+    z-index: 150;
+    position:fixed;
+    _position: absolute;
+    _top: expression(eval(document.documentElement.scrollTop+ (document.documentElement.clientHeight-this.offsetHeight)));
+}
+
+/* Nutrition Page */
+.nutritionHeaderImage{
+    height: 300px;
+    display: inline-block;
+    float: left;}
+.nutritionIsagenix{
+    width:500px;
+    display:inline-block;
+    float:right;}
+.firstSection{background:white!important;}
+.firstSection{color:#888!important;}
+.firstSection .sectionHeader{color:#888!important;
+    text-shadow: 2px 2px #2d2d2d;
+}
+
+@media only screen and (max-width : 670px) {
+    .nutritionIsagenix{width:300px;}
+}
+
+
+/* About Page */
+.headerCanvasAbout{
+    height: 100%;
+    width:100%;
+    background:url("../img/about_slide1.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#canvasAboutTwo{
+    height: 100%;
+    width:100%;
+    background:url("../img/about_slide3.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#canvasAboutThree{
+    height: 100%;
+    width:100%;
+    background:url("../img/about_slide3b.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#canvasAboutFour{
+    height: 100%;
+    width:100%;
+    background:url("../img/about_slide4.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutHeader{font-size:3em;}
+.aboutParagraph{font-size: 1.5em;}
+.aboutTwoStyles{
+    top: 15%;
+    position: relative;
+    float:right;
+    color:#888;
+    text-shadow: 2px 2px #2d2d2d;}
+.aboutThreeStyles{
+    top: 15%;
+    position: relative;}
+
+/* Contact */
+#googleMap {float: right;
+border-radius: 200px;
+box-shadow: 2px 2px 5px #2d2d2d;
+}
+
+.textShadow{text-shadow: 2px 2px #2d2d2d;}
+
+
